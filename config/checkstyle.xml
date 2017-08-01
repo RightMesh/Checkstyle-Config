@@ -14,19 +14,6 @@
         <property name="optional" value="true"/>
     </module>
 
-    <!-- Enable suppression comments -->
-    <module name="SuppressionCommentFilter">
-        <property name="offCommentFormat" value="CHECKSTYLE IGNORE\s+(\S+)"/>
-        <property name="onCommentFormat" value="CHECKSTYLE END IGNORE\s+(\S+)"/>
-        <property name="checkFormat" value="$1"/>
-    </module>
-    <module name="SuppressWithNearbyCommentFilter">
-        <!-- Syntax is "SUPPRESS CHECKSTYLE name" -->
-        <property name="commentFormat" value="SUPPRESS CHECKSTYLE (\w+)"/>
-        <property name="checkFormat" value="$1"/>
-        <property name="influenceFormat" value="1"/>
-    </module>
-
     <property name="fileExtensions" value="java, properties, xml"/>
 
     <!-- https://source.android.com/source/code-style.html#use-spaces-for-indentation -->
@@ -35,6 +22,19 @@
     </module>
 
     <module name="TreeWalker">
+        <!-- Enable suppression comments -->
+        <module name="SuppressionCommentFilter">
+            <property name="offCommentFormat" value="CHECKSTYLE IGNORE\s+(\S+)"/>
+            <property name="onCommentFormat" value="CHECKSTYLE END IGNORE\s+(\S+)"/>
+            <property name="checkFormat" value="$1"/>
+        </module>
+        <module name="SuppressWithNearbyCommentFilter">
+            <!-- Syntax is "SUPPRESS CHECKSTYLE name" -->
+            <property name="commentFormat" value="SUPPRESS CHECKSTYLE (\w+)"/>
+            <property name="checkFormat" value="$1"/>
+            <property name="influenceFormat" value="1"/>
+        </module>
+
         <!-- Android Styles -->
         <!-- https://source.android.com/source/code-style.html#dont-ignore-exceptions -->
         <module name="EmptyCatchBlockCheck">
