@@ -97,7 +97,6 @@
         </module>
         <!--https://source.android.com/source/code-style.html#follow-field-naming-conventions -->
         <module name="ConstantName"/>
-        <module name="FileContentsHolder"/> <!-- Required by comment suppression filters -->
 
         <!-- Google Styles -->
         <module name="OuterTypeFilename"/>
