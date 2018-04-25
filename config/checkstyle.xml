@@ -40,6 +40,9 @@
             <property name="max" value="100"/>
         </module>
 
+        <!-- Require "@Override" annotation when overriding. -->
+        <module name="MissingOverride"/>
+
         <!-- Android Styles -->
         <!-- https://source.android.com/source/code-style.html#dont-ignore-exceptions -->
         <module name="EmptyCatchBlockCheck">
