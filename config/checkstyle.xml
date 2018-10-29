@@ -68,42 +68,6 @@
             <property name="arrayInitIndent" value="4"/>
         </module>
         <!--https://source.android.com/source/code-style.html#follow-field-naming-conventions -->
-        <module name="MemberName">
-            <!-- Disable on Non-Android Projects -->
-            <property name="id" value="AndroidNaming1of3"></property>
-            <!-- non-public members should start with an 'm' -->
-            <property name="format" value="^m[A-Z][a-zA-Z0-9]*$"/>
-            <property name="applyToPublic" value="false"></property>
-            <property name="applyToProtected" value="true"></property>
-            <property name="applyToPrivate" value="true"></property>
-            <property name="applyToPackage" value="true"></property>
-            <message key="name.invalidPattern"
-             value="Member name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <!--https://source.android.com/source/code-style.html#follow-field-naming-conventions -->
-        <module name="StaticVariableName">
-            <!-- Disable on Non-Android Projects -->
-            <property name="id" value="AndroidNaming2of3"></property>
-            <!-- static members should start with an 's' -->
-            <property name="format" value="^s[A-Z][a-zA-Z0-9]*$"/>
-            <property name="applyToPublic" value="false"></property>
-            <message key="name.invalidPattern"
-             value="Member name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <!--https://source.android.com/source/code-style.html#follow-field-naming-conventions -->
-        <module name="MemberName">
-            <!-- Disable on Non-Android Projects -->
-            <property name="id" value="AndroidNaming3of3"></property>
-            <!-- public members should not start with an 'm' -->
-            <property name="format" value="^(?:[a-l|n-z][a-zA-Z0-9]*)$|^(?:m[a-z]+[a-zA-Z0-9]*)$"/>
-            <property name="applyToPublic" value="true"></property>
-            <property name="applyToProtected" value="false"></property>
-            <property name="applyToPrivate" value="false"></property>
-            <property name="applyToPackage" value="false"></property>
-            <message key="name.invalidPattern"
-             value="Member name ''{0}'' must match pattern ''{1}''."/>
-        </module>
-        <!--https://source.android.com/source/code-style.html#follow-field-naming-conventions -->
         <module name="ConstantName"/>
 
         <!-- Google Styles -->
