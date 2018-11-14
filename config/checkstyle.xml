@@ -35,6 +35,14 @@
             <property name="influenceFormat" value="1"/>
         </module>
 
+        <!-- 100-line Sanity check for method length. -->
+        <module name="MethodLength">
+            <property name="max" value="100"/>
+        </module>
+
+        <!-- Require "@Override" annotation when overriding. -->
+        <module name="MissingOverride"/>
+
         <!-- Android Styles -->
         <!-- https://source.android.com/source/code-style.html#dont-ignore-exceptions -->
         <module name="EmptyCatchBlockCheck">
