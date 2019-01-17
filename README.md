@@ -10,7 +10,7 @@ This Checkfile config builds off of Checkstyle's [official implementation of the
 
 These standards are downloaded and referenced automatically in the Gradle tasks for `Left/RightMesh`.
 
-To use these standards right in Android Studio, install the Checkstyle-IDEA plugin. Once installed, go to `File => Settings...`, then to `Other Settings => Checkstyle` in the menu on the left, and click on the green plus sign in the "Configuration File" box. In the new window that pops up, check the `Use a Checkstyle file accessible by HTTP` radio box and provide the URL `https://code.leftofthedot.com/frazer/checkstyle-config/raw/master/config/checkstyle.xml`. Fill in the Description and press "Next". You will now be able to select the RightMesh Checkstyle configuration from the "Rules:" dropdown in the Checkstyle plugin tab at the bottom of the screen.
+To use these standards right in Android Studio, install the Checkstyle-IDEA plugin. Once installed, go to `File => Settings...`, then to `Other Settings => Checkstyle` in the menu on the left, and click on the green plus sign in the "Configuration File" box. In the new window that pops up, check the `Use a Checkstyle file accessible by HTTP` radio box and provide the URL `https://raw.githubusercontent.com/RightMesh/Checkstyle-Config/master/config/checkstyle.xml`. Fill in the Description and press "Next". You will now be able to select the RightMesh Checkstyle configuration from the "Rules:" dropdown in the Checkstyle plugin tab at the bottom of the screen.
 
 ## Updating This File
 
