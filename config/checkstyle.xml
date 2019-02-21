@@ -54,10 +54,6 @@
         </module>
         <!-- https://source.android.com/source/code-style.html#dont-use-finalizers -->
         <module name="NoFinalizer"/>
-        <!-- https://source.android.com/source/code-style.html#fully-qualify-imports -->
-        <module name="AvoidStarImport">
-            <property name="excludes" value="java.io,java.util,junit.framework"/>
-        </module>
         <!-- https://source.android.com/source/code-style.html#use-spaces-for-indentation -->
         <module name="Indentation">
             <property name="basicOffset" value="4"/>
