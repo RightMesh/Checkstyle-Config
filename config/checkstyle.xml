@@ -16,6 +16,12 @@
 
     <property name="fileExtensions" value="java, properties, xml"/>
 
+    <!-- Check for copyright header. -->
+    <module name="Header">
+        <property name="headerFile" value="config/checkstyle/header.txt"/>
+        <property name="fileExtensions" value="java, xml, proto"/>
+    </module>
+
     <!-- https://source.android.com/source/code-style.html#use-spaces-for-indentation -->
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
