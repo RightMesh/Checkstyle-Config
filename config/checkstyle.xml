@@ -16,10 +16,16 @@
 
     <property name="fileExtensions" value="java, properties, xml"/>
 
-    <!-- Check for copyright header. -->
+    <!-- Check for copyright header in C comment style. -->
     <module name="Header">
-        <property name="headerFile" value="config/checkstyle/header.txt"/>
+        <property name="headerFile" value="config/checkstyle/header.c.txt"/>
         <property name="fileExtensions" value="java, proto"/>
+    </module>
+
+    <!-- Check for copyright header in XML/HTML comment style. -->
+    <module name="Header">
+        <property name="headerFile" value="config/checkstyle/header.xml.txt"/>
+        <property name="fileExtensions" value="xml"/>
     </module>
 
     <!-- https://source.android.com/source/code-style.html#use-spaces-for-indentation -->
