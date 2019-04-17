@@ -264,6 +264,11 @@
             <property name="target"
              value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
         </module>
+        <module name="JavadocType">
+            <property name="excludeScope" value="anoninner"/>
+            <property name="versionFormat" value="^\$Version:*\$"/>
+            <property name="allowUnknownTags" value="true"/>
+        </module>
         <module name="JavadocMethod">
             <property name="scope" value="public"/>
             <property name="allowMissingParamTags" value="false"/>
