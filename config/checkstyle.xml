@@ -292,4 +292,11 @@
         </module>
         <module name="CommentsIndentation"/>
     </module>
+    <module name="RegexpMultiline">
+        <property name="format" value="(class (?s).*private static final String TAG =(?s).*TagUtility\.formatTag\((?s).*\.class\);|interface |enum )"/>
+        <property name="minimum" value="1"/>
+        <!-- Inner classes may want to have tags as well. This shouldn't block that but a maximum must be specified. -->
+        <property name="maximum" value="100"/>
+        <property name="fileExtensions" value="java"/>
+    </module>
 </module>
