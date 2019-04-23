@@ -292,6 +292,9 @@
         </module>
         <module name="CommentsIndentation"/>
     </module>
+    <!-- This module checks the variable `TAG` is in every java file with a class.
+    It also checks that it is set to TagUtility.formatTag({Classname}.class).
+    It ignores files with an `interface` or `enum` tag instead. -->
     <module name="RegexpMultiline">
         <property name="format" value="(class (?s).*private static final String TAG =(?s).*TagUtility\.formatTag\((?s).*\.class\);|interface |enum )"/>
         <property name="minimum" value="1"/>
