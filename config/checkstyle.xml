@@ -264,6 +264,11 @@
             <property name="target"
              value="CLASS_DEF, INTERFACE_DEF, ENUM_DEF, METHOD_DEF, CTOR_DEF, VARIABLE_DEF"/>
         </module>
+        <module name="JavadocType">
+            <property name="excludeScope" value="anoninner"/>
+            <property name="versionFormat" value="^\$Version:*\$"/>
+            <property name="allowUnknownTags" value="true"/>
+        </module>
         <module name="JavadocMethod">
             <property name="scope" value="public"/>
             <property name="allowMissingParamTags" value="false"/>
@@ -286,5 +291,15 @@
             <property name="exceptionVariableName" value="expected"/>
         </module>
         <module name="CommentsIndentation"/>
+    </module>
+    <!-- This module checks the variable `TAG` is in every java file with a class.
+    It also checks that it is set to TagUtility.formatTag({Classname}.class).
+    It ignores files with an `interface` or `enum` tag instead. -->
+    <module name="RegexpMultiline">
+        <property name="format" value="(class (?s).*private static final String TAG =(?s).*TagUtility\.formatTag\((?s).*\.class\);|interface |enum )"/>
+        <property name="minimum" value="1"/>
+        <!-- Inner classes may want to have tags as well. This shouldn't block that but a maximum must be specified. -->
+        <property name="maximum" value="100"/>
+        <property name="fileExtensions" value="java"/>
     </module>
 </module>
